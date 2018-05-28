@@ -7,6 +7,9 @@
       <p><%= part.description %></p>
       <p>Price: <%= part.price %></p>
       <p>In stock: <%= part.available %></p>
+      <%= link_to 'Show', part_path(part) %>
+      <%= link_to 'Edit', edit_part_path(part) %>
+      <%= link_to 'Delete', part_path(part), method: :delete %>
     </li>
   </ul>
 <% end %>
