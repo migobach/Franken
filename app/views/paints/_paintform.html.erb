@@ -1,0 +1,15 @@
+<%= form_for @paint do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :finish %>
+  <%= f.text_field :finish %>
+
+  <%= f.label :price %>
+  <%= f.number_field :price %>
+
+  
+
+  <%= f.submit %>
+<% end %>

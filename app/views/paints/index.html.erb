@@ -7,6 +7,9 @@
       <p>Finish: <%= paint.finish %></p>
       <p>Price: <%= paint.price %></p>
       <p>In stock: <%= paint.available %></p>
+      <%= link_to 'Show', paint_path(paint) %>
+      <%= link_to 'Edit', edit_paint_path(paint) %>
+      <%= link_to 'Delete', paint_path(paint), method: :delete %>
     </li>
-  <ul>
+  </ul>
 <% end %>
