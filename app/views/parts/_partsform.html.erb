@@ -8,5 +8,8 @@
   <%= f.label :price %>
   <%= f.number_field :price %>
 
+  <%= f.label :available %>
+  <%= f.select(:available, options_for_select([['Not in stock', false], ['In stock', true]], @part.available)) %>
+  
   <%= f.submit %>
 <% end %>
