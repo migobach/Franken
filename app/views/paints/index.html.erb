@@ -1,0 +1,12 @@
+<h1>Paints</h1>
+<% @paints.each do |paint| %>
+  <ul>
+  <hr />
+    <li>
+      <p>Paint color: <%= paint.name %></p>
+      <p>Finish: <%= paint.finish %></p>
+      <p>Price: <%= paint.price %></p>
+      <p>In stock: <%= paint.available %></p>
+    </li>
+  <ul>
+<% end %>
